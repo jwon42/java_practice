@@ -6,10 +6,9 @@ import java.util.Scanner;
 
 public class CalculatorTest {
     private static void test() {
-        int number1 = 0;
-        int number2 = 0;
         Scanner inputNumber = new Scanner(System.in);
 
+        int number1 = 0;
         while (true) {
             try {
                 System.out.println("첫 번째 숫자를 입력하세요.");
@@ -20,6 +19,8 @@ public class CalculatorTest {
                 inputNumber.nextLine();
             }
         }
+
+        int number2 = 0;
         while (true) {
             try {
                 System.out.println("두 번째 숫자를 입력하세요.");
@@ -35,7 +36,6 @@ public class CalculatorTest {
         calculatorTest.printResult();
     }
     public static void main(String[] args) {
-        boolean working = true;
         Scanner inputCommand = new Scanner(System.in);
 
         System.out.println("2. 사칙연산 테스트");
@@ -44,6 +44,7 @@ public class CalculatorTest {
         System.out.println("정수만 입력 가능하며 나누기 연산의 경우 반올림 후 소숫점 두번째 자리까지 표현됩니다.");
         System.out.println(String.join("", Collections.nCopies(70, "-")));
 
+        boolean working = true;
         while (working) {
             System.out.println("명령어를 입력하세요. ex) START -> 숫자 입력 모드, EXIT -> 프로그램 종료)");
             String command = inputCommand.next();

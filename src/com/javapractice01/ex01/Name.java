@@ -1,7 +1,7 @@
 package com.javapractice01.ex01;
 
 public class Name {
-    // Member Variable
+    // Variable
     private String name;
 
     // Constructor

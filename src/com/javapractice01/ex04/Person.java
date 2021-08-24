@@ -10,15 +10,13 @@ public class Person {
 
     // Constructor
     public Person(String name, int age, Gender gender) {
-        setName(name);
+        this.name = name;
         setAge(age);
-        setGender(gender);
+        this.gender = gender;
     }
     public Person(String name, int age, Gender gender, boolean isMarried, int numOfChildren) {
-        setName(name);
-        setAge(age);
-        setGender(gender);
-        setIsMarried(isMarried);
+        this(name, age, gender);
+        this.isMarried = isMarried;
         setNumOfChildren(numOfChildren);
     }
 
@@ -27,7 +25,7 @@ public class Person {
         this.name = name;
     }
     public void setAge(int age) {
-        if (age <= 0) {
+        if (age < 0) {
             throw new RuntimeException();
         }
         this.age = age;

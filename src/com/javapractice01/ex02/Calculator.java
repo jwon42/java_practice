@@ -31,7 +31,7 @@ public class Calculator {
     }
 
     public void printResult() {
-        System.out.println("첫 번째 숫자 " + this.number1 + ", 두 번째 숫자 " + this.number2 + " 로 연산을 진행합니다.");
+        System.out.printf("첫 번째 숫자 %d, 두 번째 숫자 %d로 연산을 진행합니다.\n", this.number1, this.number2);
         System.out.println(String.join("", Collections.nCopies(42, "-")));
         System.out.printf("%d + %d = %d\n", this.number1, this.number2, add());
         System.out.printf("%d - %d = %d\n", this.number1, this.number2, subtract());

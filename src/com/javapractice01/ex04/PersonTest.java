@@ -5,6 +5,7 @@ public class PersonTest {
         Person jane = new Person("제인", 30, Gender.FEMALE);
 
         jane.printInfo();
+
         jane.setIsMarried(true);
         jane.setNumOfChildren(1);
         jane.printInfo();
