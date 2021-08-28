@@ -13,7 +13,7 @@ public class Student {
 
     // Method
     public void takeBus(Bus busName) {
-        busName.getOn();
+        busName.getOnBus();
         this.wallet.withdraw(busName.getFare());
         System.out.printf("%s 학생은 %d원을 지불하고 %d번 버스에 탑승했습니다\n", this.studentName, busName.getFare(), busName.getBusNumber());
     }

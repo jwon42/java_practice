@@ -28,13 +28,13 @@ public class Bus {
     }
 
     // Method
-    public void getOn() {
+    public void getOnBus() {
         this.numberOfCurrentPassenger += 1;
         this.countOfPassenger += 1;
         this.revenue += this.fare;
     }
 
-    public void getOff() {
+    public void getOffBus() {
         this.numberOfCurrentPassenger -= 1;
     }
 
