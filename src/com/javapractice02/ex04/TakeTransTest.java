@@ -8,11 +8,14 @@ public class TakeTransTest {
         Bus bus100 = new Bus(100);
         Subway subwayGreen = new Subway(2);
 
-        Starbucks starbucks = new Starbucks();
-        CoffeeBean coffeeBean = new CoffeeBean();
+        Cafe starbucks = new Cafe("스타벅스");
+        starbucks.addMenu("아메리카노", 3000);
 
-        studentJ.buyStarbucksAmericano(starbucks);
-        studentT.buyCoffeeBeanCafeLatte(coffeeBean);
+        Cafe coffeeBean = new Cafe("커피빈");
+        coffeeBean.addMenu("카페라떼", 4000);
+
+        studentJ.buyCoffee(starbucks, "아메리카노");
+        studentT.buyCoffee(coffeeBean, "카페라떼");
 
         studentJ.takeBus(bus100);
         studentT.takeSubway(subwayGreen);

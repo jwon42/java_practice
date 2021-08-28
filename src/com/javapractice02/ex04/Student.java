@@ -24,16 +24,10 @@ public class Student {
         System.out.printf("%s 학생은 %d원을 지불하고 %d번 지하철에 탑승했습니다\n", this.studentName, subwayName.getFare(), subwayName.getSubwayNumber());
     }
 
-    public void buyStarbucksAmericano(Starbucks starbucks) {
-        starbucks.sellAmericano();
-        this.wallet.withdraw(starbucks.getPriceOfAmericano());
-        System.out.printf("%s 학생은 %d원을 지불하고 %s에서 아메리카노를 구입했습니다\n", this.studentName, starbucks.getPriceOfAmericano(), starbucks.getCafeName());
-    }
-
-    public void buyCoffeeBeanCafeLatte(CoffeeBean coffeeBean) {
-        coffeeBean.sellCafeLatte();
-        this.wallet.withdraw(coffeeBean.getPriceOfCafeLatte());
-        System.out.printf("%s 학생은 %d원을 지불하고 %s에서 카페라떼를 구입했습니다\n", this.studentName, coffeeBean.getPriceOfCafeLatte(), coffeeBean.getCafeName());
+    public void buyCoffee(Cafe cafeName, String menuName) {
+        cafeName.sellCoffee(menuName);
+        this.wallet.withdraw(cafeName.getCoffeePrice(menuName));
+        System.out.printf("%s 학생은 %d원을 지불하고 %s에서 %s를 구입했습니다\n", this.studentName, cafeName.getCoffeePrice(menuName), cafeName.getCafeName(), menuName);
     }
 
     public void showInfo() {

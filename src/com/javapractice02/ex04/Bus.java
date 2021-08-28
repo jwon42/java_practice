@@ -31,7 +31,7 @@ public class Bus {
     public void getOn() {
         this.numberOfCurrentPassenger += 1;
         this.countOfPassenger += 1;
-        this.revenue += this.revenue;
+        this.revenue += this.fare;
     }
 
     public void getOff() {
