@@ -31,7 +31,7 @@ public class Subway {
     public void getOnSubway() {
         this.numberOfCurrentPassenger += 1;
         this.countOfPassenger += 1;
-        this.revenue += 1000;
+        this.revenue += this.fare;
     }
 
     public void getOffSubway() {
