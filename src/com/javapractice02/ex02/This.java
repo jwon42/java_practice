@@ -1,11 +1,15 @@
 package com.javapractice02.ex02;
 
 public class This {
+    // Property
     private int testNumber;
     private boolean testBoolean;
     private String testString;
 
+    // Default Constructor
     public This() {}
+
+    // Constructor
     public This(int testNumber, boolean testBoolean) {
         this.testNumber = testNumber;
         this.testBoolean = testBoolean;
@@ -15,6 +19,7 @@ public class This {
         this.testString = testString;
     }
 
+    // Getter
     public int getTestNumber() {
         return this.testNumber;
     }
@@ -27,6 +32,7 @@ public class This {
         return this.testString;
     }
 
+    // Method
     public void firstTest() {
         System.out.println(this);
     }
