@@ -5,7 +5,6 @@ public class MyDate {
     private int day;
     private int month;
     private int year;
-    private String format;
 
     // Constructor
     public MyDate(int day, int month, int year) {
